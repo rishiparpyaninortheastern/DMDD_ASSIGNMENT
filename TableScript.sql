@@ -1,0 +1,6 @@
+CREATE TABLE RegionCodes(
+   RegCd VARCHAR(10) ,
+    Info VARCHAR(50) NOT NULL,
+    TimeZone TIMESTAMP WITH TIME ZONE,
+    PRIMARY KEY(RegCd)
+);
