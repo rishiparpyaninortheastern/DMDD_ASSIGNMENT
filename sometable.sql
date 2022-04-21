@@ -1,5 +1,5 @@
  
---RegionCodes Entity
+--RegionCodes table
 --RegionCodes table is a static table that maintains the code for each region type, its description and timezone.
 
 /* Attributes	Data Types and Size	Comments
@@ -25,7 +25,7 @@ insert into RegionCodes (REGCD , DESC1, TIMEZONE) values ('Kombolcha', 'transiti
 insert into RegionCodes (REGCD , DESC1, TIMEZONE) values ('Embarcación', 'defect paradigm', 'America/Argentina/Salta');
 insert into RegionCodes (REGCD , DESC1, TIMEZONE) values ('Campoalegre', 'Future-proofed ', 'America/Bogota');
 
---SecurityTypes Entity
+--SecurityTypes table
 --SecurityTypes table contains attributes that maintain the type of security and company’s security type description.
 
 /* Attributes	Data Types and Size	Comments
@@ -48,7 +48,7 @@ insert into SecurityTypes (SecType, SecType_Desc) values ('Miscellaneous', 'Cons
 insert into SecurityTypes (SecType, SecType_Desc) values ('n/a', 'n/a');
 insert into SecurityTypes (SecType, SecType_Desc) values ('n/a', 'Energy');
 
---Address Entity
+--Address table
 --Address table contains attributes that maintain the entire address information for each Customer and Company.
 
 /* Attributes	Data Types and Size	Comments
@@ -73,7 +73,7 @@ insert into Address (CountryCd, CountryName	, RegionCode) values ('PL', 'Poland'
 insert into Address (CountryCd, CountryName	, RegionCode) values ('FR', 'France', 'Tulle');
 insert into Address (CountryCd, CountryName	, RegionCode) values ('EG', 'Egypt', 'Al Wāsiţah');
 
---CustomerHoldings Entity
+--CustomerHoldings table
 --The CustomerHoldings table contains the attributes which maintain information about the number of shares each customer holds at present.
 
 /* Attributes	Data Types and Size	Comments
