@@ -194,7 +194,7 @@ ELSE
       PRIMARY KEY (SECURITY_TYPE)
     )';
     
-    INSERT INTO SECURITYTYPE VALUES();
+    
 END IF;
 
 
