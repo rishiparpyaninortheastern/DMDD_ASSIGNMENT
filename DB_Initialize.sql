@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 ---REGIONCODES
 
 SET SERVEROUTPUT ON;
@@ -35,7 +43,7 @@ THEN
     DBMS_OUTPUT.PUT_LINE('ADDRESS TABLE ALREADY EXISTS');
 ELSE
     EXECUTE IMMEDIATE 'CREATE TABLE ADDRESS(
-    ADDR_CODE varchar(10) PRIMARY KEY,
+    ADDR_CODE varchar(10) PRIMARY KEY,-------------------------------------could this be numeric?
     ADDR_COUNTRYNAME varchar(50) NOT NULL,
     ADDR_PROVINCE varchar2(50) NOT NULL,
     CONSTRAINT REGCD
@@ -68,6 +76,8 @@ ELSE
     CUST_USERNAME VARCHAR(10) NOT NULL,
     CUST_PASSWORD VARCHAR(20) NOT NULL,
     CHECK (CUST_EMAIL LIKE ''%@%com%''))';
+    
+    select * from customer;
     
 
   
